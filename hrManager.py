@@ -6,7 +6,7 @@ from Worker import Worker
 from Supervisor import Supervisor
 
 
-def calcTotal(employee_list):
+def calc(employee_list):
     """
     Calculating the total pay for all employees.
     :param employee_list: List of Worker and Supervisor objects
@@ -67,7 +67,7 @@ def main():
     print("\nEmployee List:")
     listEmployees(employee_list)
 
-    total_pay = calcTotal(employee_list)
+    total_pay = calc(employee_list)
     print(f"\nThe total cost of all of the workers' pay is ${total_pay:.2f}")
 
 
